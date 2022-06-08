@@ -6,7 +6,7 @@ Squeezit
 Abram Kouwen  (bramkouwen), Mariia Shevchenko   (myselfmarish)
 
 ## Description
-In this project we refresh the Squeezit juice brand by creating an updated branding and promotion. Everything from packaging, logo, and product, everything got updated.
+In this project we refresh the Squeezit juice brand by creating an updated branding and promotion. Everything from packaging, logo, and product gets updated.
 
 ## Built With
 
