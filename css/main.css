@@ -97,6 +97,7 @@ ___________________________________________ */
 	   margin: 1rem;
 	   padding: 1rem;
 	   background: #000;
+	   text-align: center;
    }
 
    .box-model-clear {
@@ -172,14 +173,16 @@ ___________________________________________ */
 		grid-template-columns: 1fr;
 	}
 
-	.logo {
-		grid-column: 1 / span 1;
-	}
+    .mobile-hidden{
+   		display: none;
+   	}
+    .logo{
+	   margin: 5px;
+    }
 
-	.nav {
-		grid-column: 2 / span 1;
-		height: 50px;
-	}
+   .nav{
+	   grid-template-columns: repeat(2, 1fr);
+   }
 
 	.hero-image {
 		grid-column: 1 / span 2;
@@ -204,7 +207,7 @@ ___________________________________________ */
 		grid-column: 1 / span 2;
 		text-align: center;
 		background: #000;
-		padding: 3em 0em 3em 0em;
+		padding: 3em 0 3em 0;
 		margin-left: 6rem;
 		margin-right: 6rem;
 		margin-top: 3rem;
@@ -214,7 +217,7 @@ ___________________________________________ */
 		grid-column: 1 / span 2;
 		text-align: center;
 		background: #ccc;
-		padding: 3em 0em 3em 0em;
+		padding: 3em 0 3em 0;
 		margin-top: 3rem;
 		height: 900px;
 	}
@@ -302,7 +305,9 @@ ___________________________________________ */
 			row-gap: 2em;
 			column-gap: 2em;
 		}
-
+	    .mobile-hidden{
+		    display: block;
+	    }
 		.hero-image {
 			grid-column: 1 / span 4;
 		}
@@ -359,9 +364,5 @@ ___________________________________________ */
 
 
 		/*------------  End Grid Items ------------*/
-		.nav {
-			grid-column: 2 / span 3;
-			height: 100px;
-		}
 	}
    }
