@@ -1,0 +1,368 @@
+/*
+Style Name: Squeezit Site
+Description: Fip file
+Author: Abram Kouwen
+Version: 1.0
+Tags: 
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* -------------
+  Fonts
+-------------- */
+
+
+/* ------------ */
+
+/* -------------
+  Plugins
+-------------*/
+
+/* -------------
+  Reset
+-------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/* 01. General Styles                        
+   02. CSS Grid                          
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+   .hidden {
+       display: none;
+   }
+
+   .box-model {
+	   margin: 1rem;
+	   padding: 1rem;
+	   background: #000;
+	   text-align: center;
+   }
+
+   .box-model-clear {
+	   margin: 1rem;
+	   padding: 1rem;
+   }
+
+   /*------- Floats --------*/
+
+   .f-left {
+	   float: left;
+   }
+
+   .f-right {
+	   float: right;
+   }
+
+   /*------- End Floats --------*/
+   /*------- Font Awesome -------*/
+
+   /*------- End Font Awesome -------*/
+
+   /*------- Mobile Padding ---------*/
+
+   .mobile-padding {
+	   padding: 0 1em;
+   }
+
+   /*------- End Mobile Padding ---------*/
+
+   @supports (grid-area: auto) {
+
+	/*------------ Start Mobile ------------*/
+
+	.site {
+		max-width: 699px;
+	}
+
+	/*------------ Mobile Grid Items ------------*/
+
+	.head, .main > *, .foot {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.one-item {
+		display: grid;
+		grid-column: 1 / span 2;
+		grid-template-columns: 1fr;
+	}
+
+	.two-items {
+		display: grid;
+		grid-column: 1 / span 2;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-evenly;
+		row-gap: 2em;
+		column-gap: 2em;
+	}
+
+	.three-items {
+		display: grid;
+		grid-column: 1 / span 2;
+		grid-template-columns: repeat(3, 1fr);
+		justify-content: space-evenly;
+		row-gap: 2em;
+		column-gap: 2em;
+	}
+
+	.custom-override {
+		display: grid;
+		grid-column: 1 / span 2;
+		grid-template-columns: 1fr;
+	}
+
+    .mobile-hidden{
+   		display: none;
+   	}
+    .logo{
+	   margin: 5px;
+    }
+
+   .nav{
+	   grid-template-columns: repeat(2, 1fr);
+   }
+
+	.hero-image {
+		grid-column: 1 / span 2;
+	}
+
+	.hero {
+		height: 600px;
+		background: #666;
+	}
+
+	.drink {
+		text-align: center;
+		padding: 12em 4em 12em 4em;
+		background: #000;
+		margin-left: 8rem;
+		margin-right: 8rem;
+		margin-bottom: 1rem;
+		margin-top: 4rem;
+	}
+
+	.title {
+		grid-column: 1 / span 2;
+		text-align: center;
+		background: #000;
+		padding: 3em 0 3em 0;
+		margin-left: 6rem;
+		margin-right: 6rem;
+		margin-top: 3rem;
+	}
+
+	.why {
+		grid-column: 1 / span 2;
+		text-align: center;
+		background: #ccc;
+		padding: 3em 0 3em 0;
+		margin-top: 3rem;
+		height: 900px;
+	}
+
+	.why-text {
+		height: 150px;
+		margin-top: 2rem;
+		margin-left: 6rem;
+		margin-right: 6rem;
+		padding: 4em;
+		background: #000;
+	}
+
+	.for-text {
+		height: 150px;
+		margin-top: 2rem;
+		margin-left: 8rem;
+		margin-right: 8rem;
+		padding: 4em;
+		background: #000;
+	}
+
+	.why-img {
+		height: 200px;
+		margin-top: 2rem;
+		margin-left: 8rem;
+		margin-right: 8rem;
+		padding: 4em;
+		background: #000;
+	}
+
+	.special {
+		margin-top: 6em;
+	}
+
+	.footer {
+		margin-top: 80px;
+		grid-column: 1 / span 2;
+		height: 100px;
+		background: #000;
+	}
+
+   @media screen and (min-width: 1024px) {
+
+		.site {
+			max-width: none;
+		}
+
+		/*------------ Grid Items ------------*/
+
+		.head, .main > *, .foot {
+			display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+		}
+
+		.one-item {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: 1fr;
+		}
+
+		.two-items {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: repeat(2, 1fr);
+			justify-content: space-evenly;
+			row-gap: 2em;
+			column-gap: 2em;
+		}
+
+		.three-items {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: space-evenly;
+			row-gap: 2em;
+			column-gap: 2em;
+		}
+
+		.four-items {
+			display: grid;
+			grid-column: 2 / span 2;
+			grid-template-columns: repeat(4, 1fr);
+			justify-content: space-evenly;
+			row-gap: 2em;
+			column-gap: 2em;
+		}
+	    .mobile-hidden{
+		    display: block;
+	    }
+		.hero-image {
+			grid-column: 1 / span 4;
+		}
+
+		.hero {
+			height: 600px;
+		}
+
+		.drink {
+			padding: 12em 8em 12em 8em;
+			background: #000;
+			margin-bottom: 1rem;
+			margin-top: 4rem;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.why {
+		    grid-column: 1 / span 4;
+			background: #ccc;
+			margin-top: 3rem;
+			height: 700px;
+		}
+
+		.why-text {
+			height: 200px;
+			margin-top: 5rem;
+			padding: 4em;
+			margin-right: 0;
+			background: #000;
+		}
+	
+		.title {
+			text-align: center;
+			background: #000;
+			margin-top: 3rem;
+		}
+
+		.footer {
+			margin-top: 80px;
+			grid-column: 1 / span 4;
+			height: 100px;
+			background: #000;
+		}
+
+		.why-img {
+			height: 200px;
+			margin-top: 5rem;
+			margin-left: 8rem;
+			margin-right: 8rem;
+			padding: 4em;
+			background: #000;
+		}
+
+
+		/*------------  End Grid Items ------------*/
+	}
+   }
