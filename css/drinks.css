@@ -1,7 +1,7 @@
 /*
 Style Name: Squeezit Site Drinks
 Description: Fip file
-Author: Mariia Shevchenko
+Author: Mariia Shevchenko, Abram Kouwen
 Version: 1.0
 Tags:
 */
@@ -124,13 +124,13 @@ ___________________________________________ */
         text-align: center;
         padding: 12em 4em 12em 4em;
         background: #000;
-        margin: 100px 0 100px 200px;
+        margin: 100px 20px 0px 20px;
     }
     .description{
         text-align: center;
         padding: 12em 4em 12em 4em;
         background: #000;
-        margin: 100px 50px 100px 0;
+        margin: 20px 20px 100px 20px;
     }
     .logo{
         margin: 5px;
@@ -191,6 +191,11 @@ ___________________________________________ */
         .mobile-hidden{
             display: block;
         }
+
+        .description{
+            margin: 100px 20px 100px 20px;
+        }
+
 
         .footer {
             margin-top: 80px;
