@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Squeezit - Home</title>
+</head>
+<body class="site">
+    <h1 class="hidden">Site body</h1>
+    <a class="hidden" href="#content">Skip to content</a>
+    <header class="head">
+        <!-- Mobile Menu -->
+        <div class="mobile hidden">
+        <input type="checkbox" id="overlay-input"/>
+        <label for="overlay-input" id="overlay-menu"><span></span></label>
+        <div id="overlay">
+            <ul>
+                <li><a href="index.html">DRINKS</a></li>
+                <li><a href="index.html">ABOUT US</a></li>
+                <li><a href="index.html">CONTACT</a></li>
+                <li><a href="index.html">ACCOUNT</a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- End Mobile Menu -->
+        <div class="header three-items">
+            <nav class="nav mainNav mobile-hidden">
+                <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                       <li><a href="drinks.html">DRINKS</a></li>
+                       <li><a href="about.html">ABOUT US</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+            </nav>
+            <img class="logo" src="images/squeezit_logo.svg">
+            <div class="nav mobile-hidden">
+                <img id="acc" src="images/account-icon.svg">
+                <img id="cart" src="images/cart-icon.svg">
+            </div>
+        </div>
+    </header>
+    <main class="main" id="content">
+        <section>
+            <h2 class="hidden">Hero Image</h2>
+            <div class="hero-image">
+                <picture>
+                    <!-- Always go largest to smallest -->
+                   <source media="(min-width:800px)" srcset="images/hero.jpg">
+                   <source media="(min-width:465px)" srcset="images/mobile-hero.jpg">
+                   <img class="hero" src="images/mobile-hero.jpg" alt="FPO"> 
+                </picture>
+            </div>
+        </section>
+        <section>
+            <h2 class="hidden">Shop</h2>
+            <div class="one-item">
+                <div>
+                    <img id="shoplogo" src="images/shop-logo.svg">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="hidden">Shop</h2>
+            <div class="four-items custom-override">
+                    <div class="drink">Drink 1</div>
+                    <div class="drink">Drink 2</div>
+                    <div class="drink">Drink 3</div>
+                    <div class="drink">Drink 4</div>
+            </div>
+        </section>
+        <section>
+            <h2 class="hidden">Why Squeezit</h2>
+            <div class="why">
+                <div class="one-item">
+                    <div>
+                        <img id="whylogo" src="images/why-logo.svg">
+                    </div>
+                </div>
+                <div class="two-items custom-override">
+                    <div class="why-text">Why Text</div>
+                    <div class="why-img">Why Image</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="hidden">Specially for you</h2>
+            <div class="one-item">
+                <div class="special">
+                    <div class="title">Specially for you</div>
+                    <div class="for-text">For you Text</div>
+                    <div class="drink">Drink 5</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+            <h2 class="hidden">Site Footer</h2>
+            <div class="footer">
+                <img id="footer-logo" src="images/squeezit_logo.svg">
+                <div class="social-media-icons">
+                    <img id="twitter" src="images/twitter-icon.svg" alt="twitter icon">
+                    <img id="linkedin" src="images/linkedin-icon.svg" alt="linked in icon">
+                    <img id="instagram" src="images/instagram-icon.svg" alt="instagram icon">
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="drinks.html">DRINKS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
