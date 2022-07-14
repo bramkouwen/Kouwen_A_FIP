@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.32 43.25">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="account">
+      <circle id="head" cx="19.39" cy="11.7" r="11.7" style="fill: #8fbddf;"/>
+      <path id="body" d="M38.32,42.48v.77H0v-.77c0-9.37,8.58-17,19.16-17s19.16,7.63,19.16,17Z" style="fill: #8fbddf;"/>
+    </g>
+  </g>
+</svg>
